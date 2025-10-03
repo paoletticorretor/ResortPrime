@@ -5,57 +5,67 @@ const Location = () => {
   const locationFeatures = [
     {
       icon: MapPin,
-      title: 'Localização Privilegiada',
-      description: 'Jundiaí, SP - Região nobre e valorizada'
+      title: 'Localização Nobre',
+      description: 'Região mais valorizada de Jundiaí'
     },
     {
       icon: Car,
-      title: 'Fácil Acesso',
-      description: 'Próximo às principais vias de acesso'
+      title: 'Acesso Privilegiado',
+      description: 'Principais vias e rodovias próximas'
     },
     {
       icon: ShoppingBag,
-      title: 'Comércio Completo',
-      description: 'Shopping, mercados e serviços próximos'
+      title: 'Comércio Premium',
+      description: 'Shopping e serviços exclusivos'
     },
     {
       icon: GraduationCap,
       title: 'Educação',
-      description: 'Escolas e universidades na região'
+      description: 'Melhores instituições de ensino'
     }
   ];
 
   return (
-    <section className="py-24 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-24 bg-gradient-to-b from-black to-[#0a0a0a] relative">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,#d4af37_0%,transparent_70%)] opacity-5"></div>
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-            Localização Estratégica
+          <div className="inline-flex items-center gap-2 mb-6">
+            <div className="h-px w-12 bg-gradient-to-r from-transparent to-[#d4af37]"></div>
+            <MapPin className="w-5 h-5 text-[#d4af37]" />
+            <div className="h-px w-12 bg-gradient-to-l from-transparent to-[#d4af37]"></div>
+          </div>
+          <h2 className="text-5xl sm:text-6xl font-bold text-[#f5f5f0] mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>
+            Localização <span className="text-[#d4af37]">Estratégica</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Viva em uma das regiões mais valorizadas de Jundiaí
+          <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+            No coração de uma das regiões mais valorizadas de Jundiaí
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {locationFeatures.map((feature, index) => (
             <div 
               key={index}
               className="text-center group"
             >
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-white rounded-2xl mb-4 border border-gray-100 group-hover:border-gray-900 group-hover:bg-gray-900 transition-all duration-300">
-                <feature.icon className="w-8 h-8 text-gray-900 group-hover:text-white transition-colors duration-300" />
+              <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-[#d4af37]/10 to-transparent border border-[#d4af37]/30 rounded-2xl mb-5 group-hover:border-[#d4af37] group-hover:shadow-lg group-hover:shadow-[#d4af37]/30 transition-all duration-300">
+                <feature.icon className="w-9 h-9 text-[#d4af37] group-hover:scale-110 transition-transform duration-300" />
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">{feature.title}</h3>
-              <p className="text-gray-600 text-sm">{feature.description}</p>
+              <h3 className="text-xl font-bold text-[#f5f5f0] mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>{feature.title}</h3>
+              <p className="text-gray-400 text-sm">{feature.description}</p>
             </div>
           ))}
         </div>
 
-        <div className="bg-white rounded-2xl p-8 border border-gray-200 text-center">
-          <MapPin className="w-12 h-12 text-gray-900 mx-auto mb-4" />
-          <h3 className="text-2xl font-bold text-gray-900 mb-2">Resort Prime</h3>
-          <p className="text-gray-600">Jundiaí, São Paulo</p>
+        <div className="bg-gradient-to-br from-[#1a1a1a] to-black rounded-3xl p-10 border border-[#d4af37]/30 text-center shadow-2xl shadow-[#d4af37]/10">
+          <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-[#d4af37]/20 to-transparent border border-[#d4af37]/40 rounded-2xl mb-6">
+            <MapPin className="w-8 h-8 text-[#d4af37]" />
+          </div>
+          <h3 className="text-3xl font-bold text-[#f5f5f0] mb-3" style={{ fontFamily: 'Playfair Display, serif' }}>Resort Prime</h3>
+          <p className="text-gray-400 text-lg">Jundiaí, São Paulo</p>
+          <div className="h-px w-24 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto mt-6"></div>
         </div>
       </div>
     </section>
