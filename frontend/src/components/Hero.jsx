@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, ArrowRight } from 'lucide-react';
+import { MapPin, ArrowRight, Crown } from 'lucide-react';
 import { Button } from './ui/button';
 
 const Hero = () => {
@@ -8,54 +8,69 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative pt-16 min-h-screen flex items-center bg-gradient-to-br from-gray-50 via-white to-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+    <section className="relative pt-20 min-h-screen flex items-center bg-gradient-to-br from-black via-[#1a1a1a] to-black overflow-hidden">
+      {/* Decorative elements */}
+      <div className="absolute top-20 right-0 w-96 h-96 bg-[#d4af37]/10 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#d4af37]/5 rounded-full blur-3xl"></div>
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-8">
-            <div className="inline-flex items-center px-4 py-2 bg-gray-100 rounded-full text-sm text-gray-700">
-              <MapPin className="w-4 h-4 mr-2" />
-              Jundiaí, SP
+            <div className="inline-flex items-center px-5 py-2.5 bg-gradient-to-r from-[#d4af37]/20 to-transparent border border-[#d4af37]/30 rounded-full text-sm text-[#f4e5c3]">
+              <MapPin className="w-4 h-4 mr-2 text-[#d4af37]" />
+              Jundiaí, São Paulo
             </div>
             
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight">
-              Seu novo lar no
-              <span className="block text-gray-600 mt-2">Resort Prime</span>
-            </h1>
+            <div className="space-y-4">
+              <div className="flex items-center gap-3 mb-4">
+                <Crown className="w-8 h-8 text-[#d4af37]" />
+                <span className="text-[#d4af37] text-sm font-semibold tracking-widest uppercase">Exclusividade & Luxo</span>
+              </div>
+              
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-[#f5f5f0] leading-tight" style={{ fontFamily: 'Playfair Display, serif' }}>
+                Seu Refúgio de
+                <span className="block mt-2 bg-gradient-to-r from-[#d4af37] via-[#f4e5c3] to-[#d4af37] bg-clip-text text-transparent">
+                  Alto Padrão
+                </span>
+              </h1>
+            </div>
             
-            <p className="text-xl text-gray-600 leading-relaxed max-w-xl">
-              Apartamento de alto padrão com 109m², 3 dormitórios, varanda gourmet e automação residencial completa.
+            <p className="text-xl text-gray-300 leading-relaxed max-w-xl">
+              Apartamento sofisticado com 109m², 3 dormitórios, varanda gourmet integrada e automação residencial de última geração.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
-              <div>
-                <div className="text-sm text-gray-500 mb-1">Valor</div>
-                <div className="text-4xl font-bold text-gray-900">R$ 1.155.000</div>
+            <div className="flex flex-col sm:flex-row gap-6 items-start sm:items-center">
+              <div className="bg-gradient-to-br from-[#d4af37]/10 to-transparent border border-[#d4af37]/20 px-6 py-4 rounded-xl">
+                <div className="text-xs text-[#d4af37] mb-1 tracking-wider uppercase">Investimento</div>
+                <div className="text-4xl font-bold text-[#f5f5f0]" style={{ fontFamily: 'Playfair Display, serif' }}>R$ 1.155.000</div>
               </div>
             </div>
             
             <Button 
               onClick={handleWhatsApp}
               size="lg"
-              className="bg-gray-900 hover:bg-gray-800 text-white text-lg px-8 py-6 transition-all duration-300 hover:scale-105 group"
+              className="bg-gradient-to-r from-[#d4af37] to-[#f4e5c3] hover:from-[#f4e5c3] hover:to-[#d4af37] text-black text-lg px-10 py-7 font-bold transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-[#d4af37]/50 group"
             >
-              Agendar Visita
+              Agendar Visita Exclusiva
               <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>
           
           {/* Right Image */}
           <div className="relative">
-            <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
+            <div className="absolute -inset-4 bg-gradient-to-r from-[#d4af37] to-[#f4e5c3] rounded-3xl blur-xl opacity-20"></div>
+            <div className="relative aspect-[4/5] rounded-3xl overflow-hidden border-2 border-[#d4af37]/30 shadow-2xl shadow-[#d4af37]/20">
               <img 
                 src="https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/ze7a895z_FTRP%20%2815%29.jpg"
                 alt="Resort Prime - Vista Aérea"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
             </div>
-            <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg">
-              <div className="text-sm text-gray-500">Área Total</div>
-              <div className="text-3xl font-bold text-gray-900">109m²</div>
+            <div className="absolute -bottom-6 -left-6 bg-gradient-to-br from-black to-[#1a1a1a] border border-[#d4af37]/30 p-6 rounded-2xl shadow-2xl">
+              <div className="text-xs text-[#d4af37] mb-1 tracking-wider uppercase">Área Total</div>
+              <div className="text-4xl font-bold text-[#f5f5f0]" style={{ fontFamily: 'Playfair Display, serif' }}>109m²</div>
             </div>
           </div>
         </div>

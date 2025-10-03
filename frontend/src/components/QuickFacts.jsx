@@ -11,7 +11,7 @@ const QuickFacts = () => {
     {
       icon: Bed,
       value: '3 Dorms',
-      label: '1 Suíte'
+      label: '1 Suíte Premium'
     },
     {
       icon: Bath,
@@ -21,24 +21,27 @@ const QuickFacts = () => {
     {
       icon: Car,
       value: '2 Vagas',
-      label: 'Subsolo Livre'
+      label: 'Subsolo Privativo'
     }
   ];
 
   return (
-    <section className="py-20 bg-white border-y border-gray-100">
+    <section className="py-24 bg-gradient-to-b from-[#0a0a0a] to-black border-y border-[#d4af37]/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
           {facts.map((fact, index) => (
             <div 
               key={index}
-              className="text-center group hover:scale-105 transition-transform duration-300"
+              className="text-center group relative"
             >
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-gray-100 rounded-2xl mb-4 group-hover:bg-gray-900 transition-colors duration-300">
-                <fact.icon className="w-8 h-8 text-gray-900 group-hover:text-white transition-colors duration-300" />
+              <div className="absolute inset-0 bg-gradient-to-br from-[#d4af37]/5 to-transparent rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="relative">
+                <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-[#d4af37]/10 to-transparent border border-[#d4af37]/30 rounded-2xl mb-4 group-hover:border-[#d4af37] group-hover:shadow-lg group-hover:shadow-[#d4af37]/30 transition-all duration-300">
+                  <fact.icon className="w-9 h-9 text-[#d4af37] group-hover:scale-110 transition-transform duration-300" />
+                </div>
+                <div className="text-3xl font-bold text-[#f5f5f0] mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>{fact.value}</div>
+                <div className="text-sm text-gray-400">{fact.label}</div>
               </div>
-              <div className="text-2xl font-bold text-gray-900 mb-1">{fact.value}</div>
-              <div className="text-sm text-gray-600">{fact.label}</div>
             </div>
           ))}
         </div>

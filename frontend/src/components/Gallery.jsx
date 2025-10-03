@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X } from 'lucide-react';
+import { X, Maximize2 } from 'lucide-react';
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -11,11 +11,11 @@ const Gallery = () => {
     },
     {
       url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/58snlq4h_FTRP%20%2819%29.jpg',
-      title: 'Vista Aérea - Detalhe'
+      title: 'Arquitetura Premium'
     },
     {
       url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/54l0dlhg_FTRP_Jan2.jpeg',
-      title: 'Área de Lazer e Piscinas'
+      title: 'Área de Lazer Exclusiva'
     },
     {
       url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/audg3xwk_FTRP_Jan3.jpeg',
@@ -23,20 +23,25 @@ const Gallery = () => {
     },
     {
       url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/0boln44b_FTRP_Janela.jpeg',
-      title: 'Vista Área Verde'
+      title: 'Vista Privilegiada'
     }
   ];
 
   return (
     <>
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-gradient-to-b from-[#0a0a0a] to-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-              Conheça o Empreendimento
+            <div className="inline-flex items-center gap-2 mb-6">
+              <div className="h-px w-12 bg-gradient-to-r from-transparent to-[#d4af37]"></div>
+              <Maximize2 className="w-5 h-5 text-[#d4af37]" />
+              <div className="h-px w-12 bg-gradient-to-l from-transparent to-[#d4af37]"></div>
+            </div>
+            <h2 className="text-5xl sm:text-6xl font-bold text-[#f5f5f0] mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>
+              Conheça o <span className="text-[#d4af37]">Empreendimento</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Explore as imagens e veja a qualidade e localização privilegiada
+            <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+              Explore cada detalhe desta residência excepcional
             </p>
           </div>
           
@@ -56,10 +61,13 @@ const Gallery = () => {
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="absolute bottom-4 left-4 text-white font-medium">
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 border-2 border-transparent group-hover:border-[#d4af37]/50 rounded-2xl transition-colors duration-300"></div>
+                <div className="absolute bottom-6 left-6 right-6">
+                  <div className="text-white font-semibold text-lg mb-1" style={{ fontFamily: 'Playfair Display, serif' }}>
                     {image.title}
                   </div>
+                  <div className="h-0.5 w-12 bg-[#d4af37] group-hover:w-24 transition-all duration-300"></div>
                 </div>
               </div>
             ))}
@@ -70,21 +78,26 @@ const Gallery = () => {
       {/* Lightbox Modal */}
       {selectedImage && (
         <div 
-          className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4"
+          className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-4 backdrop-blur-sm"
           onClick={() => setSelectedImage(null)}
         >
           <button 
-            className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors"
+            className="absolute top-6 right-6 text-[#d4af37] hover:text-[#f4e5c3] transition-colors p-2 bg-black/50 rounded-full border border-[#d4af37]/30"
             onClick={() => setSelectedImage(null)}
           >
             <X className="w-8 h-8" />
           </button>
-          <img 
-            src={selectedImage.url}
-            alt={selectedImage.title}
-            className="max-w-full max-h-full object-contain"
-            onClick={(e) => e.stopPropagation()}
-          />
+          <div className="max-w-6xl w-full">
+            <img 
+              src={selectedImage.url}
+              alt={selectedImage.title}
+              className="max-w-full max-h-[85vh] object-contain mx-auto rounded-xl border-2 border-[#d4af37]/30 shadow-2xl shadow-[#d4af37]/20"
+              onClick={(e) => e.stopPropagation()}
+            />
+            <p className="text-center text-[#f4e5c3] mt-4 text-xl" style={{ fontFamily: 'Playfair Display, serif' }}>
+              {selectedImage.title}
+            </p>
+          </div>
         </div>
       )}
     </>
