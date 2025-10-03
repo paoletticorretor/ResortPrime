@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import Hero from '../components/Hero';
 import QuickFacts from '../components/QuickFacts';
 import Features from '../components/Features';
+import Amenities from '../components/Amenities';
 import Gallery from '../components/Gallery';
 import Location from '../components/Location';
 import CTASection from '../components/CTASection';
@@ -15,6 +16,7 @@ const LandingPage = () => {
       <Hero />
       <QuickFacts />
       <Features />
+      <Amenities />
       <Gallery />
       <Location />
       <CTASection />
