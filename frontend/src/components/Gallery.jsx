@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import { X, Maximize2 } from 'lucide-react';
+import { X, Maximize2, Building2, Home } from 'lucide-react';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from './ui/tabs';
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   
-  const images = [
+  const empreendimentoImages = [
     {
       url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/ze7a895z_FTRP%20%2815%29.jpg',
       title: 'Vista Aérea - Torres'
@@ -24,6 +25,29 @@ const Gallery = () => {
     {
       url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/0boln44b_FTRP_Janela.jpeg',
       title: 'Vista Privilegiada'
+    }
+  ];
+  
+  const apartamentoImages = [
+    {
+      url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/9rbztsyx_DSC_6608.jpg',
+      title: 'Cozinha Gourmet Integrada'
+    },
+    {
+      url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/qo6sngzl_DSC_6610.jpg',
+      title: 'Cozinha com Acabamento Premium'
+    },
+    {
+      url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/x82c64sj_DSC_6613.jpg',
+      title: 'Sala de Estar Elegante'
+    },
+    {
+      url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/y3n078m2_DSC_6616.jpg',
+      title: 'Ambiente Integrado'
+    },
+    {
+      url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/x9ru84y2_DSC_6620.jpg',
+      title: 'Decoração Sofisticada'
     }
   ];
 
