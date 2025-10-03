@@ -51,6 +51,36 @@ const Gallery = () => {
     }
   ];
 
+  const renderImageGrid = (images) => (
+    <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
+      {images.map((image, index) => (
+        <div 
+          key={index}
+          className={`relative overflow-hidden rounded-2xl cursor-pointer group ${
+            index === 0 ? 'lg:col-span-2 lg:row-span-2' : ''
+          }`}
+          onClick={() => setSelectedImage(image)}
+        >
+          <div className={`aspect-square ${index === 0 ? 'lg:aspect-[2/1]' : ''}`}>
+            <img 
+              src={image.url}
+              alt={image.title}
+              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+            />
+          </div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300"></div>
+          <div className="absolute inset-0 border-2 border-transparent group-hover:border-[#d4af37]/50 rounded-2xl transition-colors duration-300"></div>
+          <div className="absolute bottom-6 left-6 right-6">
+            <div className="text-white font-semibold text-lg mb-1" style={{ fontFamily: 'Playfair Display, serif' }}>
+              {image.title}
+            </div>
+            <div className="h-0.5 w-12 bg-[#d4af37] group-hover:w-24 transition-all duration-300"></div>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+
   return (
     <>
       <section className="py-24 bg-gradient-to-b from-[#0a0a0a] to-black">
@@ -62,40 +92,39 @@ const Gallery = () => {
               <div className="h-px w-12 bg-gradient-to-l from-transparent to-[#d4af37]"></div>
             </div>
             <h2 className="text-5xl sm:text-6xl font-bold text-[#f5f5f0] mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>
-              Conheça o <span className="text-[#d4af37]">Empreendimento</span>
+              Galeria <span className="text-[#d4af37]">Exclusiva</span>
             </h2>
             <p className="text-xl text-gray-400 max-w-2xl mx-auto">
               Explore cada detalhe desta residência excepcional
             </p>
           </div>
           
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
-            {images.map((image, index) => (
-              <div 
-                key={index}
-                className={`relative overflow-hidden rounded-2xl cursor-pointer group ${
-                  index === 0 ? 'lg:col-span-2 lg:row-span-2' : ''
-                }`}
-                onClick={() => setSelectedImage(image)}
+          <Tabs defaultValue="apartamento" className="w-full">
+            <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mb-12 bg-gradient-to-br from-[#1a1a1a] to-black border border-[#d4af37]/20 p-1 rounded-2xl">
+              <TabsTrigger 
+                value="apartamento"
+                className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-[#d4af37] data-[state=active]:to-[#f4e5c3] data-[state=active]:text-black font-semibold rounded-xl transition-all duration-300"
               >
-                <div className={`aspect-square ${index === 0 ? 'lg:aspect-[2/1]' : ''}`}>
-                  <img 
-                    src={image.url}
-                    alt={image.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                  />
-                </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300"></div>
-                <div className="absolute inset-0 border-2 border-transparent group-hover:border-[#d4af37]/50 rounded-2xl transition-colors duration-300"></div>
-                <div className="absolute bottom-6 left-6 right-6">
-                  <div className="text-white font-semibold text-lg mb-1" style={{ fontFamily: 'Playfair Display, serif' }}>
-                    {image.title}
-                  </div>
-                  <div className="h-0.5 w-12 bg-[#d4af37] group-hover:w-24 transition-all duration-300"></div>
-                </div>
-              </div>
-            ))}
-          </div>
+                <Home className="w-4 h-4 mr-2" />
+                Apartamento Decorado
+              </TabsTrigger>
+              <TabsTrigger 
+                value="empreendimento"
+                className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-[#d4af37] data-[state=active]:to-[#f4e5c3] data-[state=active]:text-black font-semibold rounded-xl transition-all duration-300"
+              >
+                <Building2 className="w-4 h-4 mr-2" />
+                Empreendimento
+              </TabsTrigger>
+            </TabsList>
+            
+            <TabsContent value="apartamento" className="mt-0">
+              {renderImageGrid(apartamentoImages)}
+            </TabsContent>
+            
+            <TabsContent value="empreendimento" className="mt-0">
+              {renderImageGrid(empreendimentoImages)}
+            </TabsContent>
+          </Tabs>
         </div>
       </section>
 
