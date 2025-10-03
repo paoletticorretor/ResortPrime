@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Car, ShoppingBag, GraduationCap } from 'lucide-react';
+import { MapPin, Car, ShoppingBag, GraduationCap, Navigation, Clock } from 'lucide-react';
 
 const Location = () => {
   const locationFeatures = [
@@ -9,19 +9,29 @@ const Location = () => {
       description: 'Região mais valorizada de Jundiaí'
     },
     {
-      icon: Car,
-      title: 'Acesso Privilegiado',
-      description: 'Principais vias e rodovias próximas'
+      icon: Navigation,
+      title: 'Rodovia Anhanguera',
+      description: 'Apenas 5 minutos de acesso'
+    },
+    {
+      icon: Navigation,
+      title: 'Rodovia Bandeirantes',
+      description: 'Apenas 8 minutos de acesso'
     },
     {
       icon: ShoppingBag,
       title: 'Comércio Premium',
-      description: 'Shopping e serviços exclusivos'
+      description: 'Shopping, supermercados e bancos'
     },
     {
       icon: GraduationCap,
-      title: 'Educação',
-      description: 'Melhores instituições de ensino'
+      title: 'Educação de Qualidade',
+      description: 'Escolas e universidades próximas'
+    },
+    {
+      icon: Car,
+      title: 'Tudo por Perto',
+      description: 'Parques e serviços essenciais'
     }
   ];
 
