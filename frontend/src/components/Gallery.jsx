@@ -27,19 +27,43 @@ const Gallery = () => {
   const apartamentoImages = [
     {
       url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/9rbztsyx_DSC_6608.jpg',
-      title: 'Integração Sala - Varanda Gourmet'
+      title: 'Cozinha Gourmet Integrada'
     },
     {
       url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/qo6sngzl_DSC_6610.jpg',
-      title: 'Salas Amplas e Iluminadas'
+      title: 'Cozinha com Acabamento Premium'
+    },
+    {
+      url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/x82c64sj_DSC_6613.jpg',
+      title: 'Sala de Estar Elegante'
     },
     {
       url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/y3n078m2_DSC_6616.jpg',
-      title: 'Cozinha Integrada com Varanda Gourmet'
+      title: 'Ambiente Integrado'
     },
     {
       url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/x9ru84y2_DSC_6620.jpg',
       title: 'Decoração Sofisticada'
+    },
+    {
+      url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/vqfyvr4g_DSC_6680.jpg',
+      title: 'Banheiro Premium com Acabamento em Madeira'
+    },
+    {
+      url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/codc797n_DSC_6690.jpg',
+      title: 'Suíte Master com Painel TV'
+    },
+    {
+      url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/nr70xq0s_DSC_6697.jpg',
+      title: 'Dormitório Elegante com Iluminação LED'
+    },
+    {
+      url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/yd9pdvvm_DSC_6699.jpg',
+      title: 'Quarto com Vista Privilegiada'
+    },
+    {
+      url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/pvr0qepx_DSC_6701.jpg',
+      title: 'Acabamento de Alto Padrão'
     }
   ];
 
