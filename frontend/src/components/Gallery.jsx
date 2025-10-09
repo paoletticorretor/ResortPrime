@@ -12,15 +12,39 @@ const Gallery = () => {
     },
     {
       url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/58snlq4h_FTRP%20%2819%29.jpg',
-      title: 'Vista Aérea - Torres'
+      title: 'Arquitetura Premium'
     },
     {
       url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/54l0dlhg_FTRP_Jan2.jpeg',
+      title: 'Área de Lazer Exclusiva'
+    },
+    {
+      url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/audg3xwk_FTRP_Jan3.jpeg',
       title: 'Vista Panorâmica'
     },
     {
       url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/0boln44b_FTRP_Janela.jpeg',
-      title: 'Vista Livre da Varanda Gourmet'
+      title: 'Vista Privilegiada'
+    },
+    {
+      url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/r038hvy1_Academia%201%20-%20MV.png',
+      title: 'Academia Completa Equipada'
+    },
+    {
+      url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/tcqbytnl_Churrasqueira%20-%20MV.png',
+      title: 'Churrasqueira Gourmet'
+    },
+    {
+      url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/0erlcbjx_Churrasqueira%20Sal%C3%A3o%20de%20Festas%201%20-%20MV.png',
+      title: 'Salão de Festas com Churrasqueira'
+    },
+    {
+      url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/mwkeg6t7_Club%20Prime%201%20-%20MV.png',
+      title: 'Club Prime Exclusivo'
+    },
+    {
+      url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/l4sop1yl_Coworking%201%20-%20MV.png',
+      title: 'Coworking Moderno'
     }
   ];
   
