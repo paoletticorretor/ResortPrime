@@ -35,6 +35,7 @@ const CTASection = () => {
       `*Nome:* ${formData.nome}%0A` +
       `*Email:* ${formData.email}%0A` +
       `*Telefone:* ${formData.telefone}%0A` +
+      `*Melhor horário:* ${formData.horario}%0A` +
       `${formData.mensagem ? `*Mensagem:* ${formData.mensagem}` : ''}`;
     
     window.open(`https://wa.me/5511999193489?text=${message}`, '_blank');
