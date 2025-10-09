@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Phone, MessageCircle, ArrowRight, Star, Mail, User, Send } from 'lucide-react';
+import { Phone, MessageCircle, ArrowRight, Star, Mail, User, Send, Clock } from 'lucide-react';
 import { Button } from './ui/button';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from './ui/dialog';
 import { Input } from './ui/input';
