@@ -6,17 +6,17 @@ const Features = () => {
     {
       icon: Building2,
       title: 'Exclusividade Premium',
-      description: 'Apenas 5 apartamentos por andar com 4 elevadores de acesso direto às garagens'
+      description: 'Apenas 5 apartamentos por andar, 4 elevadores com acesso direto às garagens'
     },
     {
       icon: Grid3x3,
       title: 'Planta Única',
-      description: 'Andar alto, meio da torre. Única metragem de 109m² no andar'
+      description: 'Andar alto, meio da Torre. Única metragem de 109m² no andar'
     },
     {
       icon: Wind,
       title: 'Climatização Premium',
-      description: 'Todos os dormitórios com preparação completa para ar-condicionado'
+      description: 'Todos os dormitórios, sala e varanda gourmet com preparação completa para ar-condicionado'
     },
     {
       icon: Zap,
@@ -26,22 +26,22 @@ const Features = () => {
     {
       icon: Waves,
       title: 'Varanda Gourmet',
-      description: 'Ampla varanda integrada com sala e cozinha, ideal para receber'
+      description: 'Ampla varanda integrada com sala e cozinha'
     },
     {
       icon: Sparkles,
       title: 'Cozinha Integrada',
-      description: 'Design funcional integrado com despensa e lavanderia'
+      description: 'Design funcional, integrado com despensa e lavanderia'
     },
     {
       icon: Wrench,
       title: 'Flexibilidade Total',
-      description: 'Paredes internas removíveis para personalização completa'
+      description: 'Paredes internas removíveis (conforme planta) para personalização'
     },
     {
       icon: ShieldCheck,
       title: 'Acabamento Superior',
-      description: 'Padrão incorporadora premium com acabamentos de luxo'
+      description: 'Padrão superior de louças, metais, pias, pidos em porcelanato 1ª linha (áreas molhadas)'
     }
   ];
 

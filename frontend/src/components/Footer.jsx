@@ -1,5 +1,5 @@
 import React from 'react';
-import { Building2, Phone, MapPin, Sparkles } from 'lucide-react';
+import { Building2, Phone, MapPin, Sparkles, Mails } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -18,7 +18,7 @@ const Footer = () => {
               <h3 className="text-2xl font-bold text-[#f5f5f0]" style={{ fontFamily: 'Playfair Display, serif' }}>Resort Prime</h3>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Apartamento de alto padrão com acabamento premium e localização privilegiada no coração de Jundiaí.
+              Apartamento com acabamento premium e localização privilegiada no coração de Jundiaí.
             </p>
             <div className="h-0.5 w-16 bg-gradient-to-r from-[#d4af37] to-transparent mt-6"></div>
           </div>
@@ -32,8 +32,8 @@ const Footer = () => {
                 <span>(11) 9.9919-3489</span>
               </div>
               <div className="flex items-start gap-3 text-gray-400 text-sm group hover:text-[#d4af37] transition-colors">
-                <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0 text-[#d4af37]" />
-                <span>Jundiaí, São Paulo</span>
+                <Mails className="w-5 h-5 mt-0.5 flex-shrink-0 text-[#d4af37]" />
+                <span>paoletti.corretor@gmail.com</span>
               </div>
             </div>
           </div>
@@ -56,7 +56,7 @@ const Footer = () => {
               </div>
               <div className="flex justify-between items-center pb-2 border-b border-[#d4af37]/10">
                 <span>Vagas</span>
-                <span className="text-[#f5f5f0] font-semibold">2 Privativas</span>
+                <span className="text-[#f5f5f0] font-semibold">2 Privativas Livres</span>
               </div>
             </div>
           </div>
@@ -64,7 +64,7 @@ const Footer = () => {
 
         <div className="pt-8 border-t border-[#d4af37]/20 text-center">
           <p className="text-gray-500 text-sm">
-            © {currentYear} Resort Prime. Todos os direitos reservados.
+            © {currentYear} Paoletti Imóveis. Todos os direitos reservados. Proibida a reprodução.
           </p>
           <div className="h-px w-32 bg-gradient-to-r from-transparent via-[#d4af37]/50 to-transparent mx-auto mt-4"></div>
         </div>

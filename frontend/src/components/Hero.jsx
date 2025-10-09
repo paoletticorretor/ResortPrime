@@ -4,7 +4,7 @@ import { Button } from './ui/button';
 
 const Hero = () => {
   const handleWhatsApp = () => {
-    window.open('https://wa.me/5511999193489?text=Olá! Tenho interesse no apartamento Resort Prime.', '_blank');
+    window.open('https://wa.me/5511999193489?text=Olá! Tenho interesse no apartamento no Resort Prime.', '_blank');
   };
 
   return (
@@ -19,25 +19,25 @@ const Hero = () => {
           <div className="space-y-8">
             <div className="inline-flex items-center px-5 py-2.5 bg-gradient-to-r from-[#d4af37]/20 to-transparent border border-[#d4af37]/30 rounded-full text-sm text-[#f4e5c3]">
               <MapPin className="w-4 h-4 mr-2 text-[#d4af37]" />
-              Jundiaí, São Paulo
+              Engordadouro - Jundiaí - São Paulo
             </div>
             
             <div className="space-y-4">
               <div className="flex items-center gap-3 mb-4">
                 <Crown className="w-8 h-8 text-[#d4af37]" />
-                <span className="text-[#d4af37] text-sm font-semibold tracking-widest uppercase">Exclusividade & Luxo</span>
+                <span className="text-[#d4af37] text-sm font-semibold tracking-widest uppercase">RESORT PRIME - SANTA ANGELA</span>
               </div>
               
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-[#f5f5f0] leading-tight" style={{ fontFamily: 'Playfair Display, serif' }}>
-                Seu Refúgio de
+                Apartamento à Venda
                 <span className="block mt-2 bg-gradient-to-r from-[#d4af37] via-[#f4e5c3] to-[#d4af37] bg-clip-text text-transparent">
-                  Alto Padrão
+                  Torre A - 109m²
                 </span>
               </h1>
             </div>
             
             <p className="text-xl text-gray-300 leading-relaxed max-w-xl">
-              Apartamento sofisticado com 109m², 3 dormitórios, varanda gourmet integrada e automação residencial de última geração.
+              Andar alto com vista livre, 3 dormitórios (1 suíte), ampla varanda gourmet integrada, 2 vagas em subsolo e livres.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 items-start sm:items-center">
@@ -68,10 +68,10 @@ const Hero = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
             </div>
-            <div className="absolute -bottom-6 -left-6 bg-gradient-to-br from-black to-[#1a1a1a] border border-[#d4af37]/30 p-6 rounded-2xl shadow-2xl">
+            {/* <div className="absolute -bottom-6 -left-6 bg-gradient-to-br from-black to-[#1a1a1a] border border-[#d4af37]/30 p-6 rounded-2xl shadow-2xl">
               <div className="text-xs text-[#d4af37] mb-1 tracking-wider uppercase">Área Total</div>
               <div className="text-4xl font-bold text-[#f5f5f0]" style={{ fontFamily: 'Playfair Display, serif' }}>109m²</div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

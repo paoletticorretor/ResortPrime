@@ -70,7 +70,7 @@ const Amenities = () => {
         { icon: Shield, text: 'Portaria Blindada com monitoramento 24h' },
         { icon: Shield, text: 'Sistema de segurança completo' },
         { icon: Users, text: '4 Elevadores com acesso direto às garagens' },
-        { icon: ShoppingCart, text: 'Infraestrutura completa e moderna' }
+        { icon: Flower2, text: 'Paisagismo e jardins internos e externos' }
       ]
     }
   ];
@@ -137,7 +137,7 @@ const Amenities = () => {
         </div>
 
         {/* Highlight stats */}
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6">
+        {/* <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6">
           <div className="text-center p-6 bg-gradient-to-br from-[#1a1a1a] to-black border border-[#d4af37]/20 rounded-2xl">
             <div className="text-4xl font-bold text-[#d4af37] mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>3</div>
             <div className="text-sm text-gray-400">Piscinas</div>
@@ -154,7 +154,7 @@ const Amenities = () => {
             <div className="text-4xl font-bold text-[#d4af37] mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>15+</div>
             <div className="text-sm text-gray-400">Áreas de Lazer</div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

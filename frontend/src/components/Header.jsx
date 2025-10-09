@@ -14,7 +14,7 @@ const Header = () => {
           <div className="flex items-center gap-2">
             <Sparkles className="w-6 h-6 text-[#d4af37]" />
             <span className="text-2xl sm:text-3xl font-bold text-[#f5f5f0]" style={{ fontFamily: 'Playfair Display, serif' }}>
-              Resort Prime
+              Paoletti Imóveis
             </span>
           </div>
           <Button 

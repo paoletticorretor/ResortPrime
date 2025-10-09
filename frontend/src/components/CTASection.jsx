@@ -33,7 +33,7 @@ const CTASection = () => {
             </h2>
             
             <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed">
-              Entre em contato e conheça pessoalmente este apartamento de alto padrão. Nossa equipe está pronta para recebê-lo.
+              Entre em contato e conheça pessoalmente este apartamento e tudo o que um verdadeiro Resort, dentro da cidade, pode lhe oferecer. Estamos prontos para recebê-lo!
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
@@ -55,7 +55,7 @@ const CTASection = () => {
             
             <div className="mt-8 pt-8 border-t border-[#d4af37]/20">
               <p className="text-gray-400 text-sm">
-                Atendimento personalizado e consultoria especializada
+                Atendimento personalizado e consultoria imobiliária especializada
               </p>
             </div>
           </div>

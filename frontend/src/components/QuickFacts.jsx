@@ -11,17 +11,17 @@ const QuickFacts = () => {
     {
       icon: Bed,
       value: '3 Dorms',
-      label: '1 Suíte Premium'
+      label: '1 Suíte + 2 dorms ou 1 Suíte Premium + 1 dorm'
     },
     {
       icon: Bath,
       value: '3 Banheiros',
-      label: 'Ventilação Natural'
+      label: '100% Ventilação Natural'
     },
     {
       icon: Car,
       value: '2 Vagas',
-      label: 'Subsolo Privativo'
+      label: 'Em Subsolo Privativo e Livres'
     }
   ];
 

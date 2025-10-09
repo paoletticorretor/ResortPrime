@@ -12,38 +12,30 @@ const Gallery = () => {
     },
     {
       url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/58snlq4h_FTRP%20%2819%29.jpg',
-      title: 'Arquitetura Premium'
+      title: 'Vista Aérea - Torres'
     },
     {
       url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/54l0dlhg_FTRP_Jan2.jpeg',
-      title: 'Área de Lazer Exclusiva'
-    },
-    {
-      url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/audg3xwk_FTRP_Jan3.jpeg',
       title: 'Vista Panorâmica'
     },
     {
       url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/0boln44b_FTRP_Janela.jpeg',
-      title: 'Vista Privilegiada'
+      title: 'Vista Livre da Varanda Gourmet'
     }
   ];
   
   const apartamentoImages = [
     {
       url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/9rbztsyx_DSC_6608.jpg',
-      title: 'Cozinha Gourmet Integrada'
+      title: 'Integração Sala - Varanda Gourmet'
     },
     {
       url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/qo6sngzl_DSC_6610.jpg',
-      title: 'Cozinha com Acabamento Premium'
-    },
-    {
-      url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/x82c64sj_DSC_6613.jpg',
-      title: 'Sala de Estar Elegante'
+      title: 'Salas Amplas e Iluminadas'
     },
     {
       url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/y3n078m2_DSC_6616.jpg',
-      title: 'Ambiente Integrado'
+      title: 'Cozinha Integrada com Varanda Gourmet'
     },
     {
       url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/x9ru84y2_DSC_6620.jpg',
@@ -95,7 +87,7 @@ const Gallery = () => {
               Galeria <span className="text-[#d4af37]">Exclusiva</span>
             </h2>
             <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-              Explore cada detalhe desta residência excepcional
+              Explore cada detalhe deste ótimo apartamento
             </p>
           </div>
           
