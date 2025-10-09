@@ -55,7 +55,7 @@ const Hero = () => {
             </div>
             
             <Button 
-              onClick={handleWhatsApp}
+              onClick={scrollToContact}
               size="lg"
               className="bg-gradient-to-r from-[#d4af37] to-[#f4e5c3] hover:from-[#f4e5c3] hover:to-[#d4af37] text-black text-lg px-10 py-7 font-bold transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-[#d4af37]/50 group"
             >
