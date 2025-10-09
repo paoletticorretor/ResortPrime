@@ -27,43 +27,63 @@ const Gallery = () => {
   const apartamentoImages = [
     {
       url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/9rbztsyx_DSC_6608.jpg',
-      title: ''
+      title: 'Cozinha Gourmet Integrada'
     },
     {
       url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/qo6sngzl_DSC_6610.jpg',
-      title: ''
+      title: 'Cozinha com Acabamento Premium'
     },
     {
       url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/x82c64sj_DSC_6613.jpg',
-      title: ''
+      title: 'Sala de Estar Elegante'
     },
     {
       url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/y3n078m2_DSC_6616.jpg',
-      title: ''
+      title: 'Ambiente Integrado'
     },
     {
       url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/x9ru84y2_DSC_6620.jpg',
-      title: ''
+      title: 'Decoração Sofisticada'
     },
     {
       url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/vqfyvr4g_DSC_6680.jpg',
-      title: ''
+      title: 'Banheiro Premium com Acabamento em Madeira'
     },
     {
       url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/codc797n_DSC_6690.jpg',
-      title: ''
+      title: 'Suíte Master com Painel TV'
     },
     {
       url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/nr70xq0s_DSC_6697.jpg',
-      title: ''
+      title: 'Dormitório Elegante com Iluminação LED'
     },
     {
       url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/yd9pdvvm_DSC_6699.jpg',
-      title: ''
+      title: 'Quarto com Vista Privilegiada'
     },
     {
       url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/pvr0qepx_DSC_6701.jpg',
-      title: ''
+      title: 'Acabamento de Alto Padrão'
+    },
+    {
+      url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/jfl2cw48_138595207737408.webp',
+      title: 'Varanda Gourmet Ampla com Vista'
+    },
+    {
+      url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/vkxv7zgk_156522927645382.webp',
+      title: 'Dormitório Espaçoso com Vista'
+    },
+    {
+      url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/y8qudrdm_974559329944279.webp',
+      title: 'Circulação Interna Ampla'
+    },
+    {
+      url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/3bmeln9j_982548200029528.webp',
+      title: 'Sala Ampla com Preparação para Ar'
+    },
+    {
+      url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/6bj655bu_994542326453670.webp',
+      title: 'Ambiente Integrado Sala e Cozinha'
     }
   ];
 
