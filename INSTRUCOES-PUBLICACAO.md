@@ -14,7 +14,7 @@ O arquivo `resort-prime-website-ATUALIZADO.zip` contém todos os arquivos otimiz
 1. Faça login no **cPanel** da sua hospedagem
 2. Abra o **Gerenciador de Arquivos** (File Manager)
 3. Navegue até a pasta `public_html` (ou `www`)
-4. Faça upload do arquivo `resort-prime-website.zip`
+4. Faça upload do arquivo `resort-prime-website-ATUALIZADO.zip`
 5. Clique com botão direito no arquivo e escolha **"Extrair"** (Extract)
 6. Mova todos os arquivos da pasta `build/` para `public_html/`
 7. Acesse seu domínio e pronto! 🎉
