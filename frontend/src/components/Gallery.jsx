@@ -8,23 +8,19 @@ const Gallery = () => {
   const empreendimentoImages = [
     {
       url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/ze7a895z_FTRP%20%2815%29.jpg',
-      title: 'Vista Aérea - Torres'
+      title: 'Vista Aérea - Torre "A"'
     },
     {
       url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/58snlq4h_FTRP%20%2819%29.jpg',
-      title: 'Arquitetura Premium'
+      title: 'Vista Aérea - Torres'
     },
     {
       url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/54l0dlhg_FTRP_Jan2.jpeg',
-      title: 'Área de Lazer Exclusiva'
-    },
-    {
-      url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/audg3xwk_FTRP_Jan3.jpeg',
       title: 'Vista Panorâmica'
     },
     {
       url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/0boln44b_FTRP_Janela.jpeg',
-      title: 'Vista Privilegiada'
+      title: 'Vista Livre da Varanda'
     },
     {
       url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/r038hvy1_Academia%201%20-%20MV.png',
