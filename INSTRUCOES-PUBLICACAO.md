@@ -2,7 +2,7 @@
 
 ## ✅ Arquivos Prontos para Publicação
 
-O arquivo `resort-prime-website.zip` contém todos os arquivos otimizados da sua landing page.
+O arquivo `resort-prime-website-ATUALIZADO.zip` contém todos os arquivos otimizados da sua landing page com **28 fotos** (15 apartamento + 13 empreendimento).
 
 ---
 
