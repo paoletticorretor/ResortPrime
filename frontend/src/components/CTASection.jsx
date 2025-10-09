@@ -166,6 +166,22 @@ const CTASection = () => {
                     </div>
 
                     <div className="space-y-2">
+                      <Label htmlFor="horario" className="text-[#d4af37] font-semibold flex items-center gap-2">
+                        <Clock className="w-4 h-4" />
+                        Melhor Horário para Contato *
+                      </Label>
+                      <Input
+                        id="horario"
+                        name="horario"
+                        value={formData.horario}
+                        onChange={handleFormChange}
+                        required
+                        placeholder="Ex: Manhã, Tarde, Noite"
+                        className="bg-black/40 border-[#d4af37]/30 text-[#f5f5f0] placeholder:text-gray-500 focus:border-[#d4af37]"
+                      />
+                    </div>
+
+                    <div className="space-y-2">
                       <Label htmlFor="mensagem" className="text-[#d4af37] font-semibold">
                         Mensagem (Opcional)
                       </Label>
