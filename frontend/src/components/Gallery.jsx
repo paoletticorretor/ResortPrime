@@ -45,6 +45,18 @@ const Gallery = () => {
     {
       url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/l4sop1yl_Coworking%201%20-%20MV.png',
       title: 'Coworking Moderno'
+    },
+    {
+      url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/fc9e10hp_Piscina%20Coberta%201%20-%20MV.png',
+      title: 'Piscina Coberta Aquecida'
+    },
+    {
+      url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/x1jw4ilg_Piscina%20Descoberta%201%20-%20Dia%20-%20JB.jpg',
+      title: 'Piscina Descoberta com Área Verde'
+    },
+    {
+      url: 'https://customer-assets.emergentagent.com/job_home-seller-1/artifacts/vfwi0a24_Quadra%20Beach%20Tennis%20-%20JB.jpg',
+      title: 'Quadra Beach Tennis Profissional'
     }
   ];
   
