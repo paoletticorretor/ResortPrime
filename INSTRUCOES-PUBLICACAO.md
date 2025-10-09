@@ -102,6 +102,9 @@ Se você tem um domínio (ex: `www.resortprime.com.br`):
 - ✓ **28 fotos** (15 apartamento + 13 empreendimento)
 - ✓ Plantas (109m² + Implantação)
 - ✓ Todas as comodidades listadas (30+ itens)
+- ✓ **Formulário de contato completo** (Nome, Email, Telefone, Horário, Mensagem)
+- ✓ **2 opções de contato**: WhatsApp Direto ou Formulário
+- ✓ Navegação suave (scroll) do botão Hero para seção de contato
 
 ### 📱 Links de Contato:
 - WhatsApp funciona em qualquer dispositivo
