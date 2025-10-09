@@ -46,6 +46,7 @@ const CTASection = () => {
       nome: '',
       email: '',
       telefone: '',
+      horario: '',
       mensagem: ''
     });
   };
