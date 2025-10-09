@@ -18,7 +18,7 @@ const Footer = () => {
               <h3 className="text-2xl font-bold text-[#f5f5f0]" style={{ fontFamily: 'Playfair Display, serif' }}>Resort Prime</h3>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Apartamento com acabamento premium e localização privilegiada no coração de Jundiaí.
+              Apartamento com acabamento premium e localização privilegiada, no Engordadouro em Jundiaí.
             </p>
             <div className="h-0.5 w-16 bg-gradient-to-r from-[#d4af37] to-transparent mt-6"></div>
           </div>

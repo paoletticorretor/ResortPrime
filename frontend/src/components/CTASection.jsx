@@ -11,6 +11,7 @@ const CTASection = () => {
     nome: '',
     email: '',
     telefone: '',
+    horario: '',
     mensagem: ''
   });
   const [isDialogOpen, setIsDialogOpen] = useState(false);
@@ -74,7 +75,7 @@ const CTASection = () => {
             </h2>
             
             <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed">
-              Entre em contato e conheça pessoalmente este apartamento de alto padrão. Escolha a melhor forma de contato para você.
+              Entre em contato e conheça pessoalmente este excelente apartamento. Escolha a melhor forma de contato para você.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
