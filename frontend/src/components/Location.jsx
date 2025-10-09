@@ -6,7 +6,7 @@ const Location = () => {
     {
       icon: MapPin,
       title: 'Localização',
-      description: 'Região em crescente valorização em Jundiaí'
+      description: 'Região em expansão e crescente valorização'
     },
     {
       icon: Navigation,
@@ -20,18 +20,18 @@ const Location = () => {
     },
     {
       icon: ShoppingBag,
-      title: 'Comércio Próximos',
+      title: 'Comércios Próximos',
       description: 'Shopping, supermercados, farmácias e bancos'
     },
     {
       icon: GraduationCap,
       title: 'Educação de Qualidade',
-      description: 'Escolas renomadas e universidades próximas'
+      description: 'Escolas e universidades próximas'
     },
     {
       icon: Car,
       title: 'Tudo por Perto',
-      description: 'Parques e serviços essenciais'
+      description: 'Parques, pistas de caminhada e serviços essenciais'
     }
   ];
 
@@ -47,10 +47,10 @@ const Location = () => {
             <div className="h-px w-12 bg-gradient-to-l from-transparent to-[#d4af37]"></div>
           </div>
           <h2 className="text-5xl sm:text-6xl font-bold text-[#f5f5f0] mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>
-            Localização <span className="text-[#d4af37]">Estratégica</span>
+            Excelente <span className="text-[#d4af37]">Localização</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            No coração de uma das regiões que mais cresce e mais valorizadas de Jundiaí
+            No coração de uma das regiões que mais cresce e se valoriza em Jundiaí
           </p>
         </div>
 
