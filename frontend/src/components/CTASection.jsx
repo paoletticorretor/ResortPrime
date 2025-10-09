@@ -126,7 +126,7 @@ const CTASection = () => {
                         value={formData.nome}
                         onChange={handleFormChange}
                         required
-                        placeholder="Seu nome"
+                        placeholder="Seu Nome"
                         className="bg-black/40 border-[#d4af37]/30 text-[#f5f5f0] placeholder:text-gray-500 focus:border-[#d4af37]"
                       />
                     </div>
@@ -134,7 +134,7 @@ const CTASection = () => {
                     <div className="space-y-2">
                       <Label htmlFor="email" className="text-[#d4af37] font-semibold flex items-center gap-2">
                         <Mail className="w-4 h-4" />
-                        Email *
+                        Email
                       </Label>
                       <Input
                         id="email"
@@ -142,7 +142,6 @@ const CTASection = () => {
                         type="email"
                         value={formData.email}
                         onChange={handleFormChange}
-                        required
                         placeholder="seu@email.com"
                         className="bg-black/40 border-[#d4af37]/30 text-[#f5f5f0] placeholder:text-gray-500 focus:border-[#d4af37]"
                       />
