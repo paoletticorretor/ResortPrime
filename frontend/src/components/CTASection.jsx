@@ -1,10 +1,51 @@
-import React from 'react';
-import { Phone, MessageCircle, ArrowRight, Star } from 'lucide-react';
+import React, { useState } from 'react';
+import { Phone, MessageCircle, ArrowRight, Star, Mail, User, Send } from 'lucide-react';
 import { Button } from './ui/button';
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from './ui/dialog';
+import { Input } from './ui/input';
+import { Label } from './ui/label';
+import { Textarea } from './ui/textarea';
 
 const CTASection = () => {
+  const [formData, setFormData] = useState({
+    nome: '',
+    email: '',
+    telefone: '',
+    mensagem: ''
+  });
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+
   const handleWhatsApp = () => {
     window.open('https://wa.me/5511999193489?text=Olá! Tenho interesse no apartamento Resort Prime.', '_blank');
+  };
+
+  const handleFormChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    
+    // Formata mensagem para WhatsApp
+    const message = `Olá! Tenho interesse no apartamento Resort Prime.%0A%0A` +
+      `*Nome:* ${formData.nome}%0A` +
+      `*Email:* ${formData.email}%0A` +
+      `*Telefone:* ${formData.telefone}%0A` +
+      `${formData.mensagem ? `*Mensagem:* ${formData.mensagem}` : ''}`;
+    
+    window.open(`https://wa.me/5511999193489?text=${message}`, '_blank');
+    setIsDialogOpen(false);
+    
+    // Limpa o formulário
+    setFormData({
+      nome: '',
+      email: '',
+      telefone: '',
+      mensagem: ''
+    });
   };
 
   return (
