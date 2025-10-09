@@ -7,6 +7,13 @@ const Hero = () => {
     window.open('https://wa.me/5511999193489?text=Olá! Tenho interesse no apartamento no Resort Prime.', '_blank');
   };
 
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contato');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  };
+
   return (
     <section className="relative pt-20 min-h-screen flex items-center bg-gradient-to-br from-black via-[#1a1a1a] to-black overflow-hidden">
       {/* Decorative elements */}
