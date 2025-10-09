@@ -99,9 +99,9 @@ Se você tem um domínio (ex: `www.resortprime.com.br`):
 - ✓ Imagens otimizadas e carregando das URLs públicas
 - ✓ WhatsApp configurado: (11) 9.9919-3489
 - ✓ Design responsivo (mobile e desktop)
-- ✓ 10 fotos (apartamento + empreendimento)
+- ✓ **28 fotos** (15 apartamento + 13 empreendimento)
 - ✓ Plantas (109m² + Implantação)
-- ✓ Todas as comodidades listadas
+- ✓ Todas as comodidades listadas (30+ itens)
 
 ### 📱 Links de Contato:
 - WhatsApp funciona em qualquer dispositivo
