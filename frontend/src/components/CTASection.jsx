@@ -207,6 +207,7 @@ const CTASection = () => {
               </Dialog>
             </div>
             
+            {/*
             <div className="flex items-center justify-center gap-3 text-[#d4af37]">
               <Phone className="w-5 h-5" />
               <span className="text-lg font-semibold">(11) 9.9919-3489</span>
@@ -217,6 +218,7 @@ const CTASection = () => {
                 Atendimento personalizado e consultoria imobiliária especializada
               </p>
             </div>
+            */}
           </div>
         </div>
       </div>

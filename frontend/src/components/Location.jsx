@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Car, ShoppingBag, GraduationCap, Navigation, Clock } from 'lucide-react';
+import { MapPin, Car, ShoppingBag, Route, GraduationCap, Navigation, Clock } from 'lucide-react';
 
 const Location = () => {
   const locationFeatures = [
@@ -9,12 +9,12 @@ const Location = () => {
       description: 'Região em expansão e crescente valorização'
     },
     {
-      icon: Navigation,
+      icon: Route,
       title: 'Rodovia Anhanguera',
       description: 'Apenas 5 minutos de acesso'
     },
     {
-      icon: Navigation,
+      icon: Route,
       title: 'Rodovia Bandeirantes',
       description: 'Apenas 8 minutos de acesso'
     },
