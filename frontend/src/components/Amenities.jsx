@@ -83,7 +83,7 @@ const Amenities = () => {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 mb-6">
+        <div className="inline-flex items-center gap-2 mb-6">
             <div className="h-px w-12 bg-gradient-to-r from-transparent to-[#d4af37]"></div>
             <Sparkles className="w-5 h-5 text-[#d4af37]" />
             <div className="h-px w-12 bg-gradient-to-l from-transparent to-[#d4af37]"></div>
@@ -92,7 +92,7 @@ const Amenities = () => {
             Comodidades <span className="text-[#d4af37]">Resort</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            Uma infraestrutura completa de resort para você viver com todo conforto e sofisticação
+            Uma infraestrutura completa de Resort para você viver com todo conforto e sofisticação
           </p>
         </div>
 

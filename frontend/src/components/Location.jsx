@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MapPin, Car, ShoppingBag, Route, GraduationCap, Navigation, Clock, ExternalLink } from 'lucide-react';
+import { MapPin, Car, ShoppingBag, Route, GraduationCap,Sparkles, Navigation, Clock, ExternalLink } from 'lucide-react';
 
 const Location = () => {
   const handleOpenMap = () => {
@@ -39,21 +39,22 @@ const Location = () => {
   ];
 
   return (
+  
     <section className="py-24 bg-gradient-to-b from-black to-[#0a0a0a] relative">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,#d4af37_0%,transparent_70%)] opacity-5"></div>
-      
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+     <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,#d4af37_0%,transparent_70%)] opacity-5"></div>
+     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 mb-6">
+        <div className="inline-flex items-center gap-2 mb-6">
             <div className="h-px w-12 bg-gradient-to-r from-transparent to-[#d4af37]"></div>
-            <MapPin className="w-5 h-5 text-[#d4af37]" />
+            <Sparkles className="w-5 h-5 text-[#d4af37]" />
             <div className="h-px w-12 bg-gradient-to-l from-transparent to-[#d4af37]"></div>
           </div>
+
           <h2 className="text-5xl sm:text-6xl font-bold text-[#f5f5f0] mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>
             Excelente <span className="text-[#d4af37]">Localização</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            No coração de uma das regiões que mais cresce e se valoriza em Jundiaí
+            No centro de uma das regiões que mais cresce e se valoriza em Jundiaí
           </p>
         </div>
 
@@ -72,7 +73,8 @@ const Location = () => {
           ))}
         </div>
 
-        {/* Mapa Embutido do Google Maps */}
+        {/* 
+        {/* Mapa Embutido do Google Maps 
         <div className="mb-12">
           <div className="relative bg-gradient-to-br from-[#1a1a1a] to-black rounded-3xl overflow-hidden border-2 border-[#d4af37]/30 shadow-2xl shadow-[#d4af37]/20">
             <iframe
@@ -86,7 +88,7 @@ const Location = () => {
               className="w-full"
             ></iframe>
           </div>
-        </div>
+        </div> */}
 
         <div 
           className="bg-gradient-to-br from-[#1a1a1a] to-black rounded-3xl p-10 border border-[#d4af37]/30 text-center shadow-2xl shadow-[#d4af37]/10 cursor-pointer hover:border-[#d4af37] hover:shadow-[#d4af37]/30 transition-all duration-300 group"
@@ -96,7 +98,7 @@ const Location = () => {
             <MapPin className="w-8 h-8 text-[#d4af37]" />
           </div>
           <h3 className="text-3xl font-bold text-[#f5f5f0] mb-3 group-hover:text-[#d4af37] transition-colors" style={{ fontFamily: 'Playfair Display, serif' }}>Resort Prime</h3>
-          <p className="text-gray-400 text-lg mb-4">R3XF+8P Engordadouro, Jundiaí - SP</p>
+          <p className="text-gray-400 text-lg mb-4">Av. Pedro Clarismundo Fornari, 2009, Engordadouro, Jundiaí - SP</p>
           <div className="flex items-center justify-center gap-2 text-[#d4af37] text-sm font-semibold">
             <ExternalLink className="w-4 h-4" />
             <span>Ver no Google Maps</span>

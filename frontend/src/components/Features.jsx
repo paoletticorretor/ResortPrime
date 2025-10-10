@@ -41,7 +41,7 @@ const Features = () => {
     {
       icon: ShieldCheck,
       title: 'Acabamento Superior',
-      description: 'Padrão superior de louças, metais, pias, pidos em porcelanato 1ª linha (áreas molhadas)'
+      description: 'Padrão superior de louças, metais, pias, pisos em porcelanato 1ª linha (áreas molhadas), tratamento acústico nos contrapisos'
     }
   ];
 
