@@ -105,6 +105,7 @@ Se você tem um domínio (ex: `www.resortprime.com.br`):
 - ✓ **Formulário de contato completo** (Nome, Email, Telefone, Horário, Mensagem)
 - ✓ **2 opções de contato**: WhatsApp Direto ou Formulário
 - ✓ Navegação suave (scroll) do botão Hero para seção de contato
+- ✓ **Google Maps integrado** com localização exata do empreendimento
 
 ### 📱 Links de Contato:
 - WhatsApp funciona em qualquer dispositivo
