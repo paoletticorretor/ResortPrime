@@ -1,7 +1,10 @@
-import React from 'react';
-import { MapPin, Car, ShoppingBag, Route, GraduationCap, Navigation, Clock } from 'lucide-react';
+import React, { useState } from 'react';
+import { MapPin, Car, ShoppingBag, Route, GraduationCap, Navigation, Clock, ExternalLink } from 'lucide-react';
 
 const Location = () => {
+  const handleOpenMap = () => {
+    window.open('https://www.google.com/maps/place/R3XF%2B8P+Engordadouro,+Jundiai+-+SP', '_blank');
+  };
   const locationFeatures = [
     {
       icon: MapPin,
