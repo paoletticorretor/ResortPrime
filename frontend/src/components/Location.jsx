@@ -72,12 +72,35 @@ const Location = () => {
           ))}
         </div>
 
-        <div className="bg-gradient-to-br from-[#1a1a1a] to-black rounded-3xl p-10 border border-[#d4af37]/30 text-center shadow-2xl shadow-[#d4af37]/10">
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-[#d4af37]/20 to-transparent border border-[#d4af37]/40 rounded-2xl mb-6">
+        {/* Mapa Embutido do Google Maps */}
+        <div className="mb-12">
+          <div className="relative bg-gradient-to-br from-[#1a1a1a] to-black rounded-3xl overflow-hidden border-2 border-[#d4af37]/30 shadow-2xl shadow-[#d4af37]/20">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3665.8!2d-46.925!3d-23.226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf26f7f5555555%3A0x0!2sR3XF%2B8P%20Engordadouro%2C%20Jundiai%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+              width="100%"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="w-full"
+            ></iframe>
+          </div>
+        </div>
+
+        <div 
+          className="bg-gradient-to-br from-[#1a1a1a] to-black rounded-3xl p-10 border border-[#d4af37]/30 text-center shadow-2xl shadow-[#d4af37]/10 cursor-pointer hover:border-[#d4af37] hover:shadow-[#d4af37]/30 transition-all duration-300 group"
+          onClick={handleOpenMap}
+        >
+          <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-[#d4af37]/20 to-transparent border border-[#d4af37]/40 rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
             <MapPin className="w-8 h-8 text-[#d4af37]" />
           </div>
-          <h3 className="text-3xl font-bold text-[#f5f5f0] mb-3" style={{ fontFamily: 'Playfair Display, serif' }}>Resort Prime</h3>
-          <p className="text-gray-400 text-lg">Jundiaí, São Paulo</p>
+          <h3 className="text-3xl font-bold text-[#f5f5f0] mb-3 group-hover:text-[#d4af37] transition-colors" style={{ fontFamily: 'Playfair Display, serif' }}>Resort Prime</h3>
+          <p className="text-gray-400 text-lg mb-4">R3XF+8P Engordadouro, Jundiaí - SP</p>
+          <div className="flex items-center justify-center gap-2 text-[#d4af37] text-sm font-semibold">
+            <ExternalLink className="w-4 h-4" />
+            <span>Ver no Google Maps</span>
+          </div>
           <div className="h-px w-24 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto mt-6"></div>
         </div>
       </div>
