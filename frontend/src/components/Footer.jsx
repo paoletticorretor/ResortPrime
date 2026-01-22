@@ -44,7 +44,7 @@ const Footer = () => {
             <div className="space-y-3 text-gray-400 text-sm">
               <div className="flex justify-between items-center pb-2 border-b border-[#d4af37]/10">
                 <span>Investimento</span>
-                <span className="text-[#f5f5f0] font-semibold">R$ 1.155.000</span>
+                <span className="text-[#f5f5f0] font-semibold">R$ 1.175.000</span>
               </div>
               <div className="flex justify-between items-center pb-2 border-b border-[#d4af37]/10">
                 <span>Área</span>

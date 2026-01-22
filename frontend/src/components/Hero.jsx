@@ -50,7 +50,7 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-6 items-start sm:items-center">
               <div className="bg-gradient-to-br from-[#d4af37]/10 to-transparent border border-[#d4af37]/20 px-6 py-4 rounded-xl">
                 <div className="text-xs text-[#d4af37] mb-1 tracking-wider uppercase">Investimento</div>
-                <div className="text-4xl font-bold text-[#f5f5f0]" style={{ fontFamily: 'Playfair Display, serif' }}>R$ 1.155.000</div>
+                <div className="text-4xl font-bold text-[#f5f5f0]" style={{ fontFamily: 'Playfair Display, serif' }}>R$ 1.175.000</div>
               </div>
             </div>
             
